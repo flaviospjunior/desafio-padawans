@@ -65,8 +65,6 @@ export default function Posts() {
           style={{
             height: "90vh",
             width: "100%",
-            display: "flex",
-            alignItems: "center",
           }}
         >
           <DataGridCustom
