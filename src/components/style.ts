@@ -6,9 +6,6 @@ export const HomeContainer = styled.div`
   display: "flex";
 `;
 export const DataGridCustom = styled(DataGrid)`
-display: 'flex',
-alignItems: 'center',
-justifyContent: 'center',
 height: '90vh', 
 width: '100% 
 `;

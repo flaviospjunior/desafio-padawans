@@ -13,7 +13,7 @@ import {
   GridValueGetterParams,
 } from "@material-ui/data-grid";
 
-export default function Albums() {
+export default function Posts() {
   const history = useHistory();
   const columns: GridColDef[] = [
     {
@@ -33,12 +33,17 @@ export default function Albums() {
       headerName: "Title",
       width: 150,
     },
+    {
+      field: "body",
+      headerName: "Body",
+      width: 150,
+    },
   ];
 
   const [todo, setTodo] = useState([]);
   useEffect(() => {
     api
-      .get("/albums")
+      .get("/posts")
       .then((response) => setTodo(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);

@@ -5,6 +5,7 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import api from "../api/api";
 import HomeIcon from "@material-ui/icons/Home";
 import { DataGridCustom, HomeContainer } from "./style";
+import { useHistory } from "react-router-dom";
 
 import {
   DataGrid,
@@ -13,6 +14,7 @@ import {
 } from "@material-ui/data-grid";
 
 export default function Todos() {
+  const history = useHistory();
   const columns: GridColDef[] = [
     {
       field: "id",
@@ -57,7 +59,7 @@ export default function Todos() {
       <BottomNavigation showLabels>
         <BottomNavigationAction
           label="Home"
-          onClick={() => alert("Teste")}
+          onClick={() => history.push("/")}
           icon={<HomeIcon />}
         />
       </BottomNavigation>
