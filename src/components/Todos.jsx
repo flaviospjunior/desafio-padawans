@@ -76,7 +76,6 @@ export default function Todos() {
           <DataGridCustom
             rows={todo}
             columns={columns}
-            pageSize={50}
             disableSelectionOnClick
           />
         </div>

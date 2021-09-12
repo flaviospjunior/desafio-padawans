@@ -72,7 +72,6 @@ export default function Posts() {
           <DataGridCustom
             rows={todo}
             columns={columns}
-            pageSize={50}
             disableSelectionOnClick
           />
         </div>

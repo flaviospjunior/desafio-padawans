@@ -67,7 +67,6 @@ export default function Albums() {
           <DataGridCustom
             rows={todo}
             columns={columns}
-            pageSize={50}
             disableSelectionOnClick
           />
         </div>
