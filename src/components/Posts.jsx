@@ -42,12 +42,7 @@ export default function Posts() {
 
   const [todo, setTodo] = useState([]);
   useEffect(() => {
-    api
-      .get("/posts")
-      .then((response) => setTodo(response.data))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
+    api.get("/posts").then((response) => setTodo(response.data));
   }, []);
 
   return (

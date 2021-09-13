@@ -19,12 +19,23 @@ export default function Home() {
       <Grid
         container
         direction="column"
-        spacing="10"
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item>
+        <Grid
+          style={{
+            padding: "30px",
+            paddingTop: "100px",
+          }}
+          item
+        >
           <Button
+            style={{
+              padding: "10px",
+              width: "300px",
+              height: "100px",
+              backgroundColor: "#FDAC53",
+            }}
             onClick={() => history.push("/albums")}
             startIcon={<PhotoAlbumIcon />}
             size="large"
@@ -32,8 +43,19 @@ export default function Home() {
             Albums
           </Button>
         </Grid>
-        <Grid item>
+        <Grid
+          style={{
+            padding: "30px",
+          }}
+          item
+        >
           <Button
+            style={{
+              padding: "10px",
+              width: "300px",
+              height: "100px",
+              backgroundColor: "#B55A30",
+            }}
             onClick={() => history.push("/todos")}
             startIcon={<FormatListNumberedIcon />}
             size="large"
@@ -41,8 +63,19 @@ export default function Home() {
             To-do's
           </Button>
         </Grid>
-        <Grid item>
+        <Grid
+          item
+          style={{
+            padding: "30px",
+          }}
+        >
           <Button
+            style={{
+              padding: "30px",
+              width: "300px",
+              height: "100px",
+              backgroundColor: "#9BB7D4",
+            }}
             onClick={() => history.push("/posts")}
             startIcon={<PostAddIcon />}
             size="large"
